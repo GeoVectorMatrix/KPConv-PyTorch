@@ -21,4 +21,4 @@ This modified implementation has been tested on Windows 10 with one RTX-3080. Al
 
 ## Experiments
 ![image](https://github.com/GeoVectorMatrix/KPConv-PyTorch/tree/master/Imgs/Training.png)
-![image]<img src="https://github.com/GeoVectorMatrix/KPConv-PyTorch/tree/master/Imgs/GPU_Usage.png"/><br/></div>
+![image](https://github.com/GeoVectorMatrix/KPConv-PyTorch/tree/master/Imgs/GPU_Usage.png)
