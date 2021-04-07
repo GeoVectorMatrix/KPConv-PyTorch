@@ -1,4 +1,4 @@
-Work Notes: 
+<b>Work Notes </b>: 
 Run KPConv-PyTroch on RTX-30 series GPUs/Windows 10.  
 
 ## Introduction
@@ -20,6 +20,6 @@ This modified implementation has been tested on Windows 10 with one RTX-3080. Al
 - cudatoolkit: 11.0.221
 
 ## Experiments
-![Intro figure](https://github.com/GeoVectorMatrix/KPConv-PyTorch/tree/master/Imgs/Training.png)
+<div align=center><img src="https://github.com/GeoVectorMatrix/KPConv-PyTorch/tree/master/Imgs/Training.png" width="200" height="650"/><br/></div>
 
-![Intro figure](https://github.com/GeoVectorMatrix/KPConv-PyTorch/tree/master/Imgs/GPU_Usage.png)
+<div align=center><img src="https://github.com/GeoVectorMatrix/KPConv-PyTorch/tree/master/Imgs/GPU_Usage.png" width="200" height="650"/><br/></div>
