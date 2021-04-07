@@ -14,7 +14,7 @@ This repository is forked form (https://github.com/HuguesTHOMAS/KPConv-PyTorch/)
 ```
 ## Enviroments
 This modified implementation has been tested on Windows 10 with one RTX-3080. All the fold paths in these codes have been revised.
-- Windows 10
+- Windows 10 + PyCharm  + Anaconda 
 - Pytorch: 1.7.1
 - Python: 3.8.5
 - cudatoolkit: 11.0.221
