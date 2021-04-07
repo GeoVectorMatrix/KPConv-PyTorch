@@ -20,5 +20,8 @@ This modified implementation has been tested on Windows 10 with one RTX-3080. Al
 - cudatoolkit: 11.0.221
 
 ## Experiments
-![image](https://github.com/GeoVectorMatrix/KPConv-PyTorch/tree/master/Imgs/Training.png)
-![image](https://github.com/GeoVectorMatrix/KPConv-PyTorch/tree/master/Imgs/GPU_Usage.png)
+
+![Intro figure](https://github.com/GeoVectorMatrix/KPConv-PyTorch/blob/master/Imgs/Training.png)
+
+![Intro figure](https://github.com/GeoVectorMatrix/KPConv-PyTorch/blob/master/Imgs/GPU_Usage.png)
+
