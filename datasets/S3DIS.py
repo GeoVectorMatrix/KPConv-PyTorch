@@ -85,7 +85,7 @@ class S3DISDataset(PointCloudDataset):
         self.ignored_labels = np.array([])
 
         # Dataset folder
-        self.path = '../../Data/S3DIS'
+        self.path = '..\\..\\Data\\S3DIS'
 
         # Type of task conducted on this dataset
         self.dataset_task = 'cloud_segmentation'
@@ -101,7 +101,7 @@ class S3DISDataset(PointCloudDataset):
         self.set = set
 
         # Using potential or random epoch generation
-        self.use_potentials = use_potentials
+        self.use_potentials = use_potentials   #use_potentials
 
         # Path of the training files
         self.train_path = 'original_ply'
@@ -239,7 +239,7 @@ class S3DISDataset(PointCloudDataset):
         else:
             return self.random_item(batch_i)
 
-    def potential_item(self, batch_i, debug_workers=False):
+    def potential_item(self, batch_i, debug_workers=False):  # False
 
         t = [time.time()]
 
@@ -818,7 +818,7 @@ class S3DISDataset(PointCloudDataset):
             print('Done in {:.1f}s'.format(time.time() - t0))
 
         ######################
-        # Reprojection indices
+        # Re-projection indices
         ######################
 
         # Get number of clouds

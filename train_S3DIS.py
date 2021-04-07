@@ -59,7 +59,7 @@ class S3DISConfig(Config):
     dataset_task = ''
 
     # Number of CPU threads for the input pipeline
-    input_threads = 10
+    input_threads = 6   #10
 
     #########################
     # Architecture definition
@@ -100,7 +100,7 @@ class S3DISConfig(Config):
     num_kernel_points = 15
 
     # Size of the first subsampling grid in meter
-    first_subsampling_dl = 0.03
+    first_subsampling_dl = 0.05 # 0.03 old
 
     # Radius of convolution in "number grid cell". (2.5 is the standard value)
     conv_radius = 2.5
@@ -150,7 +150,7 @@ class S3DISConfig(Config):
     grad_clip_norm = 100.0
 
     # Number of batch
-    batch_num = 6
+    batch_num = 4  #6
 
     # Number of steps per epochs
     epoch_steps = 500
@@ -281,7 +281,7 @@ if __name__ == '__main__':
     t1 = time.time()
     net = KPFCNN(config, training_dataset.label_values, training_dataset.ignored_labels)
 
-    debug = False
+    debug = True
     if debug:
         print('\n*************************************\n')
         print(net)

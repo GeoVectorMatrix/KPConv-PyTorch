@@ -386,7 +386,7 @@ def kernel_point_optimization_debug(radius, num_points, num_kernels=1, dimension
             fig.axes[0].set_ylim((-radius*1.1, radius*1.1))
             fig.axes[0].set_aspect('equal')
             plt.draw()
-            plt.pause(0.001)
+            plt.pause(0.001) # 0.001
             plt.show(block=False)
             print(moving_factor)
 
@@ -412,12 +412,15 @@ def load_kernels(radius, num_kpoints, dimension, fixed, lloyd=False):
     if not exists(kernel_dir):
         makedirs(kernel_dir)
 
+    # num_kpoints = 20  ## Geo
     # To many points switch to Lloyds
     if num_kpoints > 30:
         lloyd = True
 
     # Kernel_file
     kernel_file = join(kernel_dir, 'k_{:03d}_{:s}_{:d}D.ply'.format(num_kpoints, fixed, dimension))
+
+
 
     # Check if already done
     if not exists(kernel_file):
@@ -437,6 +440,10 @@ def load_kernels(radius, num_kpoints, dimension, fixed, lloyd=False):
                                                                         dimension=dimension,
                                                                         fixed=fixed,
                                                                         verbose=0)
+            # Debug Xia
+            #saveCopyKP = kernel_points
+            #np.squeeze(saveCopyKP)
+            #write_ply(kernel_file, saveCopyKP, ['x', 'y', 'z'])
 
             # Find best candidate
             best_k = np.argmin(grad_norms[-1, :])

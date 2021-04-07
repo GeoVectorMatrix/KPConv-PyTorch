@@ -142,8 +142,8 @@ class Modelnet40Config(Config):
     grad_clip_norm = 100.0
 
     # Number of batch
-    batch_num = 10
-
+    #batch_num = 10
+    batch_num = 14
     # Number of steps per epochs
     epoch_steps = 300
 
@@ -184,7 +184,7 @@ if __name__ == '__main__':
     ############################
     # Initialize the environment
     ############################
-
+    print('****************')
     # Set which gpu is going to be used
     GPU_ID = '0'
 

@@ -63,7 +63,7 @@ class KPCNN(nn.Module):
         super(KPCNN, self).__init__()
 
         #####################
-        # Network opperations
+        # Network operations
         #####################
 
         # Current radius of convolution and feature dimension

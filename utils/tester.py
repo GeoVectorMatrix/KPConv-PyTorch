@@ -198,7 +198,7 @@ class ModelTester:
 
         # Test saving path
         if config.saving:
-            test_path = join('test', config.saving_path.split('/')[-1])
+            test_path = join('test', config.saving_path.split('\\')[-1])
             if not exists(test_path):
                 makedirs(test_path)
             if not exists(join(test_path, 'predictions')):
@@ -424,7 +424,7 @@ class ModelTester:
                         preds = test_loader.dataset.label_values[np.argmax(proj_probs[i], axis=1)].astype(np.int32)
 
                         # Save plys
-                        cloud_name = file_path.split('/')[-1]
+                        cloud_name = file_path.split('\\')[-1]
                         test_name = join(test_path, 'predictions', cloud_name)
                         write_ply(test_name,
                                   [points, preds],
@@ -485,7 +485,7 @@ class ModelTester:
         test_path = None
         report_path = None
         if config.saving:
-            test_path = join('test', config.saving_path.split('/')[-1])
+            test_path = join('test', config.saving_path.split('\\')[-1])
             if not exists(test_path):
                 makedirs(test_path)
             report_path = join(test_path, 'reports')

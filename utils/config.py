@@ -41,10 +41,10 @@ class Config:
     ##################
 
     # Dataset name
-    dataset = ''
+    dataset = 'S3DIS'
 
     # Type of network model
-    dataset_task = ''
+    dataset_task = 'S3DIS'
 
     # Number of classes in the dataset
     num_classes = 0
@@ -59,7 +59,7 @@ class Config:
     in_radius = 1.0
 
     # Number of CPU threads for the input pipeline
-    input_threads = 8
+    input_threads = 4  #8
 
     ##################
     # Model parameters
@@ -168,8 +168,8 @@ class Config:
     repulse_extent = 1.0                    # Distance of repulsion for deformed kernel points
 
     # Number of batch
-    batch_num = 10
-    val_batch_num = 10
+    batch_num     = 8         # 10
+    val_batch_num = 8         # 10
 
     # Maximal number of epochs
     max_epoch = 1000
@@ -178,7 +178,7 @@ class Config:
     epoch_steps = 1000
 
     # Number of validation examples per epoch
-    validation_size = 100
+    validation_size = 70  # 100
 
     # Number of epoch between each checkpoint
     checkpoint_gap = 50
